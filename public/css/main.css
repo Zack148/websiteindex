@@ -1,0 +1,14 @@
+.master-center {
+  text-align: center;
+}
+
+.format-paragraph {
+  text-align: center;
+  width: 720px;
+  margin-left: 12rem;
+}
+
+.input-edit {
+  flex-grow: 0 !important;
+  width: 100px !important;
+}

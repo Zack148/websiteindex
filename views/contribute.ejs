@@ -1,0 +1,28 @@
+<% include _includes/header %>
+  <div class="container">
+    <% if (locals.error) { %>
+      <div class="alert alert-danger" role="alert">
+        <%= locals.error %>
+      </div>
+      <%  } %>
+      
+    <h1>Contribute</h1>
+    <p>Contribute to the project by crowd sourcing different types of websites. If you would like to help out use the form below by selecting what type of website it is and the URL and we will take care of the rest.</p>
+
+    <form class="" action="/submit" method="post">
+      <div class="input-group my-5">
+          <select id="lunch" name="list" class="selectpicker input-group-prepend input-edit form-control" data-live-search="true" required>
+            <option  selected disabled>Pick one</option>
+            <option value="index">index</option>
+            <option value="game">Game</option>
+            <option value="useless">Useless</option>
+          </select>
+        <input type="text" name="newUrl" class="form-control <%= locals.error ?  'is-invalid' : '' %>" placeholder="Enter URL here">
+        <div class="input-group-append">
+          <button class="btn btn-primary btn-md" type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+<% include _Includes/footer %>
