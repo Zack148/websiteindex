@@ -62,6 +62,12 @@ app.get('/thankyou', function(req, res) {
 app.get('/contribute', function(req, res) {
   res.render('contribute', {title: 'Contribute'});
 })
+
+//About page
+app.get('/about', function(req, res) {
+  res.render('about', {title: 'About Us'});
+})
+
 app.listen(3000, function() {
   console.log('Server Started on Port 3000');
 })

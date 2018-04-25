@@ -5,17 +5,16 @@
         <%= locals.error %>
       </div>
       <%  } %>
-      
-    <h1>Contribute</h1>
-    <p>Contribute to the project by crowd sourcing different types of websites. If you would like to help out use the form below by selecting what type of website it is and the URL and we will take care of the rest.</p>
+
+    <h1 >Contribute</h1>
+    <hr>
+    <p class="format-paragraph">Contribute to the project by crowdsourcing different types of websites whether it be games, useless, or just little to unknown websites we accept them all. If you would like to contribute please feel free to use the form below to enter your URL link once you submit it we will take care of the rest!</p>
 
     <form class="" action="/submit" method="post">
       <div class="input-group my-5">
           <select id="lunch" name="list" class="selectpicker input-group-prepend input-edit form-control" data-live-search="true" required>
-            <option  selected disabled>Pick one</option>
-            <option value="index">index</option>
-            <option value="game">Game</option>
-            <option value="useless">Useless</option>
+            <option  selected disabled>Pick a list</option>
+            <option value="limbo">Contribute</option>
           </select>
         <input type="text" name="newUrl" class="form-control <%= locals.error ?  'is-invalid' : '' %>" placeholder="Enter URL here">
         <div class="input-group-append">
